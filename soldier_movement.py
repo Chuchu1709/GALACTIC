@@ -84,6 +84,10 @@ if __name__ == "__main__":
     soldier = (2, 0)
     destination = (2, 4)
 
-    next_move = find_best_move(soldier, destination, battlefield)
+    first_move = find_best_move(soldier, destination, battlefield)
+    second_move = find_best_move(first_move, destination, battlefield)
+    
 
-    print(f"Soldier's next move: {next_move}")
+    print(f"1st move: {first_move}")
+    print(f"2nd move: {second_move}")
+    
